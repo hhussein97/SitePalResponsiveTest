@@ -66,6 +66,7 @@ function Char2D () {
                                                                 <SitePal embed='3432155,200,200,"",1,1,2722664,0,1,1,"WSGmJ3ScqO8d4Zop1cuILz7q4In5k6q2",0,1' sayAudio={sayAudio}    sayText={sayText} />
 
                                                             </div>
+                                                            
                                                         </td>
                                                     </tr>
                                                     <tr>
