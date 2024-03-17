@@ -1,0 +1,53 @@
+
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Char2D from './char2D.js';
+import Char3D from './char3D.js';
+import CharFB from './charFB.js';
+import './App.css';
+function App() {
+  return (
+    <Router>
+      <div>
+        <div style={{display:'inline',padding:'0px 10px'}}>
+          <Link to="/char2D">2D</Link>
+        </div>
+        <div style={{display:'inline',padding:'0px 10px'}}>
+          <Link to="/char3D">3D</Link>
+        </div>
+        <div style={{display:'inline',padding:'0px 10px'}}>
+          <Link to="/charFB">FB</Link>
+        </div>
+        <div style={{display:'inline',padding:'0px 10px'}}>
+          <Link to="/empty">Empty</Link>
+        </div>
+        {/* A <Switch> looks through its children <Route>s and
+            renders the first one that matches the current URL. */}
+        <Switch>
+          <Route path="/char2D">
+            <Char2D />
+          </Route>
+          <Route path="/char3D">
+            <Char3D />
+          </Route>
+          <Route path="/charFB">
+            <CharFB />
+          </Route>
+          {/* <Route path="/">
+            <App />
+          </Route> */}
+        </Switch>
+        <div>
+          Click <a href="/example/react/sitepal-react.zip" download>download</a> the source code.
+        </div>
+      </div>
+    </Router>
+  );
+}
+
+export default App;
